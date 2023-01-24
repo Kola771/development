@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .nav1{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: rgb(49, 48, 48);
+        }
+        .nav1>ul {
+            display: flex;
+            margin: 0;
+        }
+        .nav1>ul>li>a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav1>ul>li {
+            padding: 1em 1.5em;
+            display: inline-block;
+            position: relative;
+            list-style-type: none;
+        }
+        .nav1>ul>li>ul {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            background-color: rgb(49, 48, 48);
+            top: 100%;
+            left: 0;
+            padding: 0;
+        }
+        .nav1>ul>li>ul>li{
+            color: white;
+            padding: 1em 1.5em;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .nav1>ul>li>ul>li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav1>ul>li:hover{
+            padding: 1em 1.5em;
+            background-color: orangered;
+        }
+        .nav1>ul>li:nth-of-type(2)>ul>li:hover{
+            background-color: orangered;
+        }
+        .nav1>ul>li:nth-of-type(3)>ul>li:hover{
+            background-color: orangered;
+        }
+        .nav1>ul>li:hover ul {
+            display: block;
+        }
+
+        body {
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+        /* .nav1 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: .5em;
+            background-color: #f50;
+        } */
+        .nav2 {
+            overflow-y: scroll ;
+            padding: .5em;
+            background-color: gray;
+        }
+        .nav2> ul {
+            display: flex;
+            flex-direction: column;
+        }
+        /* .nav1> ul {
+            display: flex;
+            justify-content: space-around;
+            gap: 1em;
+        } */
+
+        .grid {
+            display: grid;
+            grid-template-columns: 12% 68% 20%;
+            border: 1px solid;
+        }
+
+        .section1 {
+            margin: 0 auto;
+            padding: 1em;
+            text-align: justify;
+            overflow-y: scroll;
+            height: 50em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav class="nav1">
+            <ul>
+                <li> <a href="#">Rubrique 1</a> </li>
+                <li><a href="#">Rubrique 1</a>
+                    <ul>
+                        <li><a href="#">Rubrique 1</a></li>
+                        <li><a href="#">Rubrique 1</a></li>
+                        <li><a href="#">Rubrique 1</a></li>
+                        <li><a href="#">Rubrique 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Rubrique 1</a>
+                    <ul>
+                        <li><a href="#">Rubrique 1</a></li>
+                        <li><a href="#">Rubrique 1</a></li>
+                        <li><a href="#">Rubrique 1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="grid">
+            
+        <nav class="nav2">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </nav>
+            <section class="section1">
+                <h2>ok1</h2>
+            <section>
+                <h2>ok</h2>
+                
+            </section>
+        </div>
+    </main>
+
+    <script src="nav.js"></script>
+</body>
+</html>

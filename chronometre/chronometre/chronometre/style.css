@@ -1,0 +1,42 @@
+.containers {
+    width: 650px;
+    margin:0 auto;
+
+}
+.contains {
+    width:650px;
+    border: 1px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.myButtons {
+    margin-inline: 160px;
+    
+}
+
+h1 {
+    font-size:50px;
+    padding-left: 15px;
+}
+button {
+    padding:10px 25px;
+    margin-left:20px;
+    font-size: 25px;
+}
+button#start {
+    background-color: green;
+}
+button#start.desactive {
+    display: none;
+}
+
+
+button#stop {
+    background-color: red;
+    display: none;
+}
+
+button#stop.active {
+    display: block;
+}

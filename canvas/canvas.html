@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas width="800" height="600" id="mycanvas"></canvas>
+
+    <script>
+        'use strict'
+            document.addEventListener("DOMContentLoaded", function(){
+                    let canvas = document.getElementById('mycanvas');
+                    let ctx = canvas.getContext('2d');
+                    // Rectangle 1
+                    ctx.strokeStyle = 'green';
+                    ctx.fillStyle = 'lime';
+                    ctx.fillRect(50, 50, 200, 150)
+                    ctx.strokeRect(50, 50, 200, 150);
+
+                    // Rectangle 2
+                    ctx.strokeStyle = '#f50';
+                    ctx.fillStyle = 'yellow';
+                    ctx.fillRect(50, 210, 200, 150);
+                    ctx.strokeRect(50, 210, 200, 150);
+
+                    // Rectangle 3
+                    ctx.strokeStyle = 'blue';
+                    ctx.fillStyle = '#FF0000';
+                    ctx.fillRect(300, 50, 200, 150);
+                    ctx.strokeRect(300, 50, 200, 150);
+
+                    // Cercle
+                    ctx.beginPath();
+                    ctx.fillStyle = 'blue';
+                    ctx.arc(400, 280, 70, 0, 2 * Math.PI);
+                    ctx.fill();
+            })
+    </script>
+</body>
+</html>

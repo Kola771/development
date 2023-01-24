@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 1em;
+        }
+        .container>div {
+            text-align: center;
+            padding: 1em;
+            border: 3px solid #f50;
+            border-radius: .2em;
+            width: 20%;
+        }
+        button {
+            border: none;
+            padding: 1em;
+            color: white;
+            background-color: #f50;
+            border-radius: .2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Compteur</h2>
+            <p id="compteur">00 heure(s) 00 minute(s) 00 seconde(s) 00 tierce(s)</p>
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="compteur.js"></script>
+</body>
+</html>
